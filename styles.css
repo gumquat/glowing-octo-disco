@@ -5,3 +5,19 @@
   background-position: center;
   background-size: auto;
 }
+
+.bg-purple {
+  background-color: #C271FF;
+}
+
+.img-background {
+    position: relative;
+    width: 100%;
+}
+.img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
