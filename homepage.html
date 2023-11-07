@@ -20,25 +20,40 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid p-0 m-0">
 
-                                            <!--HEADER SECTION-->
-  <section class="container-fluid bg-img-home">
+<!--HEADER SECTION-->
+  <section class="bg-img-home p-4">
 
-            <!--NAVBAR-->
-<nav class="navbar">
-  <a class="navbar-brand p-4">
-    <img src="images/logo.png">
-  </a>
-  <div class="row header-links-div text-decoration-none p-4" id="toggle-content">
-    <div class="p-2"><h5><a href="#link">COURSES</a></h5></div>
-    <div class="p-2"><h5><a href="#link">PRICING</a></h5></div>
-    <div class="p-2"><h5><a href="#link">LOGIN</a></h5></div>
-  </div>
-</nav>
+<!--NAVBAR FIXED-->
+  <nav class="navbar navbar-expand-md navbar-dark text-center">
+    <!-- Hamburger Icon for Small Screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <!--HEADER-->
-      <div class="container-fluid text-white">
+    <a href="logo-link"><img src="images/logo.png" alt="img missing"></a>
+
+<!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">COURSES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PRICING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">LOGIN</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!--HEADER-->
+      <div class="text-white">
           <h1 class="d-flex row justify-content-center pt-4">Get schooled</h1>
           <div class="d-flex row justify-content-center justify-content-around">
             <p>SMILES</p>
@@ -54,7 +69,7 @@
 
           <p class="p-5 d-flex row justify-content-center"><span class="txt-purple">Learn</span> from the pros</p>
 
-            <!--THE PROS-->
+<!--THE PROS-->
       <div class="d-flex row justify-content-center pb-5">
         <div class="col">
           <img class="mx-auto d-block" src="images/pros-1.png">
@@ -88,158 +103,176 @@
 
     </section>
 
+<!--PURPLE QUOTE SECTION-->
+  <section class="bg-purple p-4">
 
-              <!--PURPLE QUOTE SECTION-->
-    <section class="container-fluid bg-purple p-4">
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
 
-        <div class="container p-4">
+        <div class="carousel-item active">
+          <div class=" p-4">
             <div class="row d-flex align-items-center">
               <img src="images/red-shirt-smile.png">
               <div class="pl-4">
                 <q>Those tutorials are concise and go straight to the point. I can't think of a better
                 place to learn smiling. And it's so fun!</q>
-                <p>
-                  <b>Person Name</b>
-                </p>
-                <p>
-                  <i>weather presenter</i>
-                </p>
+                <p><b>Person Name</b></p>
+                <p><i>weather presenter</i></p>
               </div>
-
+            </div>
           </div>
         </div>
-      </section>
+        <div class="carousel-item">
+          <div class=" p-4">
+            <div class="row d-flex align-items-center">
+              <img src="images/red-shirt-smile.png">
+              <div class="pl-4">
+                <q>Those tutorials are concise and go straight to the point. I can't think of a better
+                place to learn smiling. And it's so fun!</q>
+                <p><b>Person Name</b></p>
+                <p><i>weather presenter</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
 
-              <!--TUTORIAL SECTION-->
-    <section class="container-fluid">
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
 
-      <div class="d-flex justify-content-center pb-5">
-        <h1> Most <span class="txt-purple"> popular </span> tutorials </h1>
-      </div>
+  </div>
 
-      
-      <div class="d-flex row justify-content-center align-items-center pb-5">
+  </section>
 
-        <div class="card shadow m-2">
-                <div class="col-12 p-0"> 
-                  <div class="card-img-top">    
-                    <img class="img-responsive img-background" src="images/diagonal-smile.png">
-                    <img class="img-responsive img-overlay" src="images/play-button.png">
-                  </div>   
+<!--TUTORIAL VIDEO SECTION-->
+  <section class="container-fluid">
+
+    <div class="d-flex justify-content-center p-5">
+      <h1> Most <span class="txt-purple"> popular </span> tutorials </h1>
+    </div>
+
+    <div class="d-flex row pb-5 justify-content-center align-items-center">
+  
+      <div class="card shadow m-2">
+              <div class="col-12 p-0"> 
+                <div class="card-img-top">    
+                  <img class="img-responsive img-background" src="images/diagonal-smile.png">
+                  <img class="img-responsive img-overlay" src="images/play-button.png">
+                </div>   
+              </div>
+              <div class="card-body p-2">
+                <h2>Happy Smile</h2>
+                <div class="card-text">        
+                  <p>Lorem ipsum dolor sit amet, concect</p>
+                  <p >adipiscing elit, sed so eiusmod</p>
                 </div>
-          <div class="card-body p-2">
-            <h2>Diagonal Smile</h2>
-            <div class="card-text">        
-              <p>Lorem ipsum dolor sit amet, concect</p>
-              <p >adipiscing elit, sed so eiusmod</p>
-            </div>
-              <div class="row">
-                <img src="images/phillip-massey.png">
-                <h3>Phillip Massey</h3>
+                  <div class="p-0 m-0">
+                    <h3><img src="images/phillip-massey.png"> Phillip Massey</h3>
+                  </div>
+                  <div class="p-0 m-0">
+                    <img src="images/Star-1.png">
+                    <img src="images/Star-1.png">
+                    <img src="images/Star-1.png">
+                    <img src="images/Star-1.png">
+                    <img src="images/Star-2.png">
+                    <p class="txt-purple">8 mins</p>
+                  </div>
+                </div>
               </div>
-              <div class="row">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-2.png">
-                <p>8 mins</p>
-              </div>
-            </div>
-          </div>
-
-        <div class="card shadow m-2">
-          <div class="col-12 p-0">
-            <div class="card-img-top">       
-              <img class="img-responsive img-background" src="images/sad-smile.png">
-              <img class="img-responsive img-overlay" src="images/play-button.png">
-            </div>
-          </div>
-          <div class="card-body p-2">
-          <h2>Sad Smile</h2>
-          <div class="card-text">        
-            <p>Lorem ipsum dolor sit amet, concect</p>
-            <p >adipiscing elit, sed so eiusmod</p>
-          </div>
-            <div class="row">
-              <img src="images/phillip-massey.png">
-              <h3>Phillip Massey</h3>
-            </div>
-            <div class="row">
-              <img src="images/Star-1.png">
-              <img src="images/Star-1.png">
-              <img src="images/Star-1.png">
-              <img src="images/Star-1.png">
-              <img src="images/Star-2.png">
-              <p>8 mins</p>
-            </div>
-          </div>
-        </div>
 
       <div class="card shadow m-2">
-          <div class="col-12 p-0"> 
-            <div class="card-img-top">     
-              <img class="img-responsive img-background" src="images/natural-smile.png">
-              <img class="img-responsive img-overlay" src="images/play-button.png">
-            </div>  
-          </div>
-          <div class="card-body p-2">
-          <h2>Natural Smile</h2>
-          <div class="card-text">        
-            <p>Lorem ipsum dolor sit amet, concect</p>
-            <p >adipiscing elit, sed so eiusmod</p>
-          </div>
-            <div class="row">
-              <img src="images/phillip-massey.png">
-              <h3>Phillip Massey</h3>
-            </div>
-            <div class="row">
-              <img src="images/Star-1.png">
-              <img src="images/Star-1.png">
-              <img src="images/Star-1.png">
-              <img src="images/Star-1.png">
-              <img src="images/Star-2.png">
-              <p>8 mins</p>
-            </div>
+        <div class="col-12 p-0">
+          <div class="card-img-top">       
+            <img class="img-responsive img-background" src="images/sad-smile.png">
+            <img class="img-responsive img-overlay" src="images/play-button.png">
           </div>
         </div>
-
-        <div class="card shadow m-2">
-          <div class="col-12 p-0"> 
-            <div class="card-img-top">      
-              <img class="img-responsive img-background" src="images/happy-smile.png">
-              <img class="img-responsive img-overlay" src="images/play-button.png">
-            </div> 
-          </div>
-          <div class="card-body p-2">
+        <div class="card-body p-2">
           <h2>Happy Smile</h2>
           <div class="card-text">        
             <p>Lorem ipsum dolor sit amet, concect</p>
             <p >adipiscing elit, sed so eiusmod</p>
           </div>
-            <div class="row">
-              <img src="images/phillip-massey.png">
-              <h3>Phillip Massey</h3>
+            <div class="p-0 m-0">
+              <h3><img src="images/phillip-massey.png"> Phillip Massey</h3>
             </div>
-            <div class="row">
+            <div class="p-0 m-0">
               <img src="images/Star-1.png">
               <img src="images/Star-1.png">
               <img src="images/Star-1.png">
               <img src="images/Star-1.png">
               <img src="images/Star-2.png">
-              <p>8 mins</p>
+              <p class="txt-purple">8 mins</p>
             </div>
           </div>
         </div>
 
+    <div class="card shadow m-2">
+        <div class="col-12 p-0"> 
+          <div class="card-img-top">     
+            <img class="img-responsive img-background" src="images/natural-smile.png">
+            <img class="img-responsive img-overlay" src="images/play-button.png">
+          </div>  
+        </div>
+        <div class="card-body p-2">
+          <h2>Happy Smile</h2>
+          <div class="card-text">        
+            <p>Lorem ipsum dolor sit amet, concect</p>
+            <p >adipiscing elit, sed so eiusmod</p>
+          </div>
+            <div class="p-0 m-0">
+              <h3><img src="images/phillip-massey.png"> Phillip Massey</h3>
+            </div>
+            <div class="p-0 m-0">
+              <img src="images/Star-1.png">
+              <img src="images/Star-1.png">
+              <img src="images/Star-1.png">
+              <img src="images/Star-1.png">
+              <img src="images/Star-2.png">
+              <p class="txt-purple">8 mins</p>
+            </div>
+          </div>
+        </div>
+
+      <div class="card shadow m-2">
+        <div class="col-12 p-0"> 
+          <div class="card-img-top">      
+            <img class="img-responsive img-background" src="images/happy-smile.png">
+            <img class="img-responsive img-overlay" src="images/play-button.png">
+          </div> 
+        </div>
+        <div class="card-body p-2">
+        <h2>Happy Smile</h2>
+        <div class="card-text">        
+          <p>Lorem ipsum dolor sit amet, concect</p>
+          <p >adipiscing elit, sed so eiusmod</p>
+        </div>
+          <div class="p-0 m-0">
+            <h3><img src="images/phillip-massey.png"> Phillip Massey</h3>
+          </div>
+          <div class="p-0 m-0">
+            <img src="images/Star-1.png">
+            <img src="images/Star-1.png">
+            <img src="images/Star-1.png">
+            <img src="images/Star-1.png">
+            <img src="images/Star-2.png">
+            <p class="txt-purple">8 mins</p>
+          </div>
+        </div>
       </div>
 
+    </div>
 
   </section>
 
 
-              <!--MEMBERSHIP SECTION-->
+<!--MEMBERSHIP SECTION-->
   <section class="bg-blue container-fluid text-white">
     <div class="d-flex justify-content-center p-5">
       <h1><span>Free </span>membership</h1>
@@ -294,13 +327,12 @@
 
   </section>
 
-      <!--LATEST VIDEO SECTION-->
-      <section class="container-fluid">
+<!--LATEST VIDEO SECTION-->
+      <section class="pb-4 mb-4">
 
         <div class="d-flex justify-content-center p-5">
-          <h1> <span>Latest</span>Videos </h1>
+          <h1> <span class="txt-purple">Latest</span>Videos </h1>
         </div>
-  
         
         <div class="d-flex row justify-content-center align-items-center">
   
@@ -311,26 +343,25 @@
                       <img class="img-responsive img-overlay" src="images/play-button.png">
                     </div>   
                   </div>
-            <div class="card-body p-2">
-              <h2>Diagonal Smile</h2>
-              <div class="card-text">        
-                <p>Lorem ipsum dolor sit amet, concect</p>
-                <p >adipiscing elit, sed so eiusmod</p>
-              </div>
-                <div class="row">
-                  <img src="images/phillip-massey.png">
-                  <h3>Phillip Massey</h3>
-                </div>
-                <div class="row">
-                  <img src="images/Star-1.png">
-                  <img src="images/Star-1.png">
-                  <img src="images/Star-1.png">
-                  <img src="images/Star-1.png">
-                  <img src="images/Star-2.png">
-                  <p>8 mins</p>
-                </div>
-              </div>
-            </div>
+                  <div class="card-body p-2">
+                    <h2>Happy Smile</h2>
+                    <div class="card-text">        
+                      <p>Lorem ipsum dolor sit amet, concect</p>
+                      <p >adipiscing elit, sed so eiusmod</p>
+                    </div>
+                      <div class="p-0 m-0">
+                        <h3><img src="images/phillip-massey.png"> Phillip Massey</h3>
+                      </div>
+                      <div class="p-0 m-0">
+                        <img src="images/Star-1.png">
+                        <img src="images/Star-1.png">
+                        <img src="images/Star-1.png">
+                        <img src="images/Star-1.png">
+                        <img src="images/Star-2.png">
+                        <p class="txt-purple">8 mins</p>
+                      </div>
+                    </div>
+                  </div>
   
           <div class="card shadow m-2">
             <div class="col-12 p-0">
@@ -340,25 +371,24 @@
               </div>
             </div>
             <div class="card-body p-2">
-            <h2>Sad Smile</h2>
-            <div class="card-text">        
-              <p>Lorem ipsum dolor sit amet, concect</p>
-              <p >adipiscing elit, sed so eiusmod</p>
-            </div>
-              <div class="row">
-                <img src="images/phillip-massey.png">
-                <h3>Phillip Massey</h3>
+              <h2>Happy Smile</h2>
+              <div class="card-text">        
+                <p>Lorem ipsum dolor sit amet, concect</p>
+                <p >adipiscing elit, sed so eiusmod</p>
               </div>
-              <div class="row">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-2.png">
-                <p>8 mins</p>
+                <div class="p-0 m-0">
+                  <h3><img src="images/phillip-massey.png"> Phillip Massey</h3>
+                </div>
+                <div class="p-0 m-0">
+                  <img src="images/Star-1.png">
+                  <img src="images/Star-1.png">
+                  <img src="images/Star-1.png">
+                  <img src="images/Star-1.png">
+                  <img src="images/Star-2.png">
+                  <p class="txt-purple">8 mins</p>
+                </div>
               </div>
             </div>
-          </div>
   
         <div class="card shadow m-2">
             <div class="col-12 p-0"> 
@@ -368,25 +398,24 @@
               </div>  
             </div>
             <div class="card-body p-2">
-            <h2>Natural Smile</h2>
-            <div class="card-text">        
-              <p>Lorem ipsum dolor sit amet, concect</p>
-              <p >adipiscing elit, sed so eiusmod</p>
-            </div>
-              <div class="row">
-                <img src="images/phillip-massey.png">
-                <h3>Phillip Massey</h3>
+              <h2>Happy Smile</h2>
+              <div class="card-text">        
+                <p>Lorem ipsum dolor sit amet, concect</p>
+                <p >adipiscing elit, sed so eiusmod</p>
               </div>
-              <div class="row">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-1.png">
-                <img src="images/Star-2.png">
-                <p>8 mins</p>
+                <div class="p-0 m-0">
+                  <h3><img src="images/phillip-massey.png"> Phillip Massey</h3>
+                </div>
+                <div class="p-0 m-0">
+                  <img src="images/Star-1.png">
+                  <img src="images/Star-1.png">
+                  <img src="images/Star-1.png">
+                  <img src="images/Star-1.png">
+                  <img src="images/Star-2.png">
+                  <p class="txt-purple">8 mins</p>
+                </div>
               </div>
             </div>
-          </div>
   
           <div class="card shadow m-2">
             <div class="col-12 p-0"> 
@@ -401,63 +430,25 @@
               <p>Lorem ipsum dolor sit amet, concect</p>
               <p >adipiscing elit, sed so eiusmod</p>
             </div>
-              <div class="row">
-                <img src="images/phillip-massey.png">
-                <h3>Phillip Massey</h3>
+              <div class="p-0 m-0">
+                <h3><img src="images/phillip-massey.png"> Phillip Massey</h3>
               </div>
-              <div class="row">
+              <div class="p-0 m-0">
                 <img src="images/Star-1.png">
                 <img src="images/Star-1.png">
                 <img src="images/Star-1.png">
                 <img src="images/Star-1.png">
                 <img src="images/Star-2.png">
-                <p>8 mins</p>
+                <p class="txt-purple">8 mins</p>
               </div>
             </div>
           </div>
   
         </div>
-  
-  
+
     </section>
 
-                                                              <!--
-  <section>
-    <h1>F.A.Q.</h1>
-    <div>
-      <div>
-        <h3>How does this work?</h3>
-        <p>Text Text Text Text Text Text Text Text</p>
-        <p>Text Text Text Text Text Text Text Text</p>
-        <p>Text Text Text Text Text Text Text Text</p>
-      </div>
-
-      <div>
-        <h3>How does this work?</h3>
-        <p>Text Text Text Text Text Text Text Text</p>
-        <p>Text Text Text Text Text Text Text Text</p>
-        <p>Text Text Text Text Text Text Text Text</p>
-      </div>
-    </div>
-
-    <div>
-      <div>
-        <h3>How does this work?</h3>
-        <p>Text Text Text Text Text Text Text Text</p>
-        <p>ext Text Text Text Text Text Text Text</p>
-        <p>Text Text Text Text Text Text Text Text</p>
-      </div>
-
-      <div>
-        <h3>How does this work?</h3>
-        <p>Text Text Text Text Text Text Text Text</p>
-        <p>Text Text Text Text Text Text Text Text</p>
-        <p>Text Text Text Text Text Text Text Text</p>
-      </div>
-    </div>
-  </section>
-                                                              -->
-              <!--FOOTER SECTION-->
+<!--FOOTER SECTION-->
   <footer class="bg-blue">
 
     <div class="d-flex justify-content-between p-5">
@@ -479,7 +470,7 @@
       </div>
     </div>
 
-  <div class="d-flex justify-content-center p-2 text-white"><p>&copy; smileschool 2020</p></div>
+  <div class="d-flex justify-content-center p-2 text-white text-muted"><p>&copy; smileschool 2020</p></div>
     
 
   </footer>

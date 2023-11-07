@@ -15,11 +15,9 @@
 .bg-purple {
   background-color: #C271FF;
 }
-
 .bg-blue {
   background-color: #071629;
 }
-
 .img-background {
     position: relative;
     width: 100%;
@@ -42,6 +40,7 @@
   color: white;
 }
 
-.green-icon {
-  width: 75px;
+th, td {
+  width: 200px;
+  text-align: center;
 }
