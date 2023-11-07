@@ -1,13 +1,23 @@
 /* START HEADER & FIRST SECTION */
-.background-image {
+.bg-img-home {
   background-image: url("images/background.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
+}
+.bg-img-pricing {
+  background-image: url("images/pic_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-purple {
   background-color: #C271FF;
+}
+
+.bg-blue {
+  background-color: #071629;
 }
 
 .img-background {
@@ -20,4 +30,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30%;
+}
+
+.txt-purple{
+  color: #C271FF;
+  padding-right: 0.3rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white;
+}
+
+.green-icon {
+  width: 75px;
 }
